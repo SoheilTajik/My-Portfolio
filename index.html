@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!--ICONSCOUT CDN-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <!--STYLES CSS----->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-------------------- NAV ----------------------------------->
+    <nav id="desktop-nav">
+      <div class="logo">SOHEiL</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-------------------- HAMBURGER MENU-NAV -------------------->
+    <nav id="hamburger-nav">
+      <div class="logo">SOHEiL</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <dir class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </dir>
+      </div>
+    </nav>
+    <!-------------------- PROFILE ------------------------------->
+    <section id="profile">
+      <div class="section_pic-container">
+        <img src="assets/Photo.jpg" alt="Soheil Profile picture" />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">HEY!, I`m</p>
+        <h1 class="title">Soheil</h1>
+        <p class="section_text_p2">A Web3 Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')">Download CV</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/soheil-tajik/ " target="_blank"><i class="uil uil-linkedin"></i></a>
+          <a href="https://github.com/SoheilTajik" target="_blank"><i class="uil uil-github"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-------------------- ABOUT --------------------------------->
+    <section id="about">
+      <p class="section_text_p1">Get to know more</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section_pic-container">
+          <img src="assets/Personal picture.jpg" alt="Profile Picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="assets/experience.png" alt="experience" class="icon" />
+              <h3>Experience</h3>
+              <p>
+                5+ years in Design <br />
+                1+ year Web3 Development
+              </p>
+            </div>
+            <div class="details-container">
+              <img src="assets/education.png" alt="education" class="icon" />
+              <h3>Education</h3>
+              <p>Bachelor in Architectural Engineering<br />Master in Architectural Design</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As an experienced designer, and a Web3 developer, I have developed expertise in Smart Contract development, and Full-Stack Web3 development through comprehensive advanced training. As an experienced Architect, computational designer,
+              and researcher who became a blockchain developer, I have developed expertise in Smart Contract development, and Full-Stack Web3 development through comprehensive advanced training.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href = './#experience'" />
+    </section>
+    <!-------------------- EXPERIENCE --------------------------------->
+    <section id="experience">
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="assets/html.png" alt="experience icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="assets/css.png" alt="experience icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="assets/react.png" alt="experience icon" class="icon" />
+                <div>
+                  <h3>React.js</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="assets/next.png" alt="experience icon" class="icon" />
+                <div>
+                  <h3>Next.js</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img src="assets/solidity.png" alt="experience icon" class="icon" />
+                <div>
+                  <h3>Solidity</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="assets/node.png" alt="experience icon" class="icon" />
+                <div>
+                  <h3>Node.js</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="assets/api.png" alt="experience icon" class="icon" />
+                <div>
+                  <h3>Restful API</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="assets/git.png" alt="experience icon" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href = './#projects'" />
+    </section>
+    <!-------------------- PROJECTS ----------------------------------->
+    <section id="projects">
+      <p class="section_text_p1">Explore my</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project01.jpg" alt="project01" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <form action="https://github.com/SoheilTajik" method="get" target="_blank"><button type="submit" class="btn btn-color-2 project-btn">Github</button></form>
+              <form action="https://github.com/SoheilTajik" method="get" target="_blank"><button type="submit" class="btn btn-color-2 project-btn">Demo</button></form>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project02.jpg" alt="project01" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <form action="https://github.com/SoheilTajik" method="get" target="_blank"><button type="submit" class="btn btn-color-2 project-btn">Github</button></form>
+              <form action="https://github.com/SoheilTajik" method="get" target="_blank"><button type="submit" class="btn btn-color-2 project-btn">Demo</button></form>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project03.jpg" alt="project01" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <form action="https://github.com/SoheilTajik" method="get" target="_blank"><button type="submit" class="btn btn-color-2 project-btn">Github</button></form>
+              <form action="https://github.com/SoheilTajik" method="get" target="_blank"><button type="submit" class="btn btn-color-2 project-btn">Demo</button></form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href = './#contact'" />
+    </section>
+    <!-------------------- CONTACT ------------------------------------>
+    <section id="contact">
+      <p class="section_text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i class="uil uil-envelope-alt"></i>  
+          <a href="mailto:Soheil.tajik@gmail.com" target="_blank">Soheil.tajik@gmail.com</a>
+        </div>
+        <div class="contact-info-container">
+          <i class="uil uil-linkedin"></i>
+          <a href="https://www.linkedin.com/in/soheil-tajik/ " target="_blank">LinkedIn</a>
+        </div>
+      
+    </section>
+    <!-------------------- FOOTER  ------------------------------------>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Soheil Tajik. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
